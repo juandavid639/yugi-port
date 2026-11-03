@@ -2,48 +2,58 @@
 
 Motor hecho desde cero para jugar **Yu-Gi-Oh! Power of Chaos** (Yugi the Destiny, con extras de Joey the Passion y Kaiba the Revenge) en teléfonos Android, en horizontal y con controles táctiles.
 
-> ⚠️ **Este proyecto NO incluye el juego.** La app no trae cartas, imágenes, música, voces ni textos de Konami: los lee en tu teléfono desde **tu propia copia** de los juegos de PC. Sin esos archivos la app no funciona.
+> 🔒 **Repositorio privado, copia personal.** La app (APK) solo trae el motor. Las cartas, imágenes, música y voces salen de los archivos del juego, que están guardados aparte en el release **«datos»**. No compartas esos archivos.
 
 ---
 
-## Qué necesitas
+## Instalación paso a paso
 
-- Un teléfono **Android 7.0 o superior** (recomendado: 4 GB de RAM o más).
-- Tu copia de **Yu-Gi-Oh! Power of Chaos: Yugi the Destiny** para PC.
-- Unos **700 MB libres** en el teléfono para los archivos del juego.
+### Qué descargar y dónde está
 
-### Archivos del juego
+| Paso | Archivo | Dónde encontrarlo | ¿Obligatorio? | Qué es |
+|---|---|---|---|---|
+| 1 | `yugi-port-v1.10.7.apk` (4 MB) | Release [**v1.10.7**](../../releases/tag/v1.10.7) | **Sí** | La app |
+| 2 | `yugi-todo.ypk` (632 MB) | Release [**datos**](../../releases/tag/datos) | **Sí** | Todo el juego: cartas, imágenes, menús, música, efectos, voces de Yugi, fusiones, y los rivales Joey y Kaiba |
+| 3 | `joey-voces.ypk` (89 MB) | Release [**datos**](../../releases/tag/datos) | Opcional | Voces y música de Joey |
+| 4 | `kaiba-voces.ypk` (115 MB) | Release [**datos**](../../releases/tag/datos) | Opcional | Voces y música de Kaiba |
 
-Están en la carpeta donde instalaste el juego en tu PC.
+Los archivos están al final de cada release, en la sección **Assets**. Para ver los releases desde la portada, entra en **Releases** en la columna derecha.
 
-| Archivo | De qué juego | ¿Obligatorio? | Para qué sirve |
-|---|---|---|---|
-| `data.dat` | Yugi the Destiny | **Sí** | Cartas, imágenes, menús y textos |
-| `Voice.dat` | Yugi the Destiny | Recomendado | Música, efectos de sonido y voces |
-| `yugi_pc.exe` | Yugi the Destiny | Recomendado | Fusiones y lista de cartas prohibidas y limitadas |
-| `joey.dat` | Joey the Passion | Opcional | Es su `data.dat` **renombrado**: rival Joey, sus cartas y las imágenes de cartas que falten |
-| `kaiba.dat` | Kaiba the Revenge | Opcional | Es su `data.dat` **renombrado**: rival Kaiba y sus cartas |
-| `Voice.dat` | Joey the Passion o Kaiba the Revenge | Opcional | Voces y música de Joey o Kaiba. Se pueden dejar con el nombre `Voice.dat`: la app detecta de qué juego es cada uno |
+> Como el repositorio es privado, para descargar tienes que **haber iniciado sesión en GitHub**. Puedes descargar en el navegador del teléfono con tu sesión iniciada, o descargar en el PC y pasar los archivos al teléfono por cable USB, por ejemplo a la carpeta `Descargas`.
+>
+> **No cambies el nombre de los `.ypk`:** la app reconoce las voces de Joey y de Kaiba por la palabra `joey` o `kaiba` en el nombre del archivo.
 
-> Los `data.dat` de Joey y Kaiba **deben renombrarse** a `joey.dat` y `kaiba.dat`, porque los tres juegos usan el mismo nombre.
+### Orden de instalación
 
----
+1. **Descarga** los archivos de la tabla: la APK y, como mínimo, `yugi-todo.ypk`.
+2. **Instala la APK.** Si Android avisa de «origen desconocido», permite instalar desde el navegador o el gestor de archivos que estés usando.
+3. **Abre «Yugi Port».** La primera vez pide los archivos del juego.
+4. **Elige los `.ypk`.** Puedes seleccionar los tres a la vez: mantén pulsado `yugi-todo.ypk` y toca `joey-voces.ypk` y `kaiba-voces.ypk`. Si no ves los `.ypk`, usa el selector **«Archivos»** del sistema en lugar de la galería.
+5. **Espera** a que la barra termine de mostrar «guardando… en el dispositivo». Mientras tanto ya puedes jugar. Al terminar, la app no vuelve a pedirlos y **puedes borrar los `.ypk` de `Descargas`**.
 
-## Instalación
+**Para añadir después las voces de Joey o Kaiba:** ve a **OPCIONES → AÑADIR ARCHIVOS**, elige `joey-voces.ypk` o `kaiba-voces.ypk` y la app se reinicia con ellas.
 
-1. **Descarga la APK** desde la sección [Releases](../../releases) de este repositorio (`yugi-port-vX.Y.Z.apk`, unos 4 MB).
-2. **Copia los archivos del juego** de la tabla anterior al teléfono por cable USB, por ejemplo a la carpeta `Descargas`.
-3. **Instala la APK.** Si Android avisa de «origen desconocido», permite la instalación desde tu navegador o tu gestor de archivos.
-4. **Abre «Yugi Port»** y, cuando te lo pida, **selecciona todos los archivos a la vez**: mantén pulsado el primero y toca los demás.
-5. **Espera.** La primera vez la app copia los archivos a su memoria interna y aparece una barra de progreso. Al terminar ya no vuelve a pedirlos, y **puedes borrar las copias de `Descargas`**.
+### Actualizar a una versión nueva
 
-¿Tienes Joey o Kaiba y no los añadiste al principio? Ve a **OPCIONES → AÑADIR ARCHIVOS**, elígelos y la app se reinicia con ellos.
+1. Descarga la APK del release más reciente (marcado como **Latest**).
+2. Instálala **encima** de la que tienes, sin desinstalar.
 
-### Actualizar
+No hace falta volver a elegir los `.ypk`: la app conserva los archivos del juego, tu colección, tus mazos y tus estadísticas.
 
-Instala la APK nueva **encima** de la que tienes, sin desinstalar. Conservas tu colección, tus mazos, tus estadísticas y los archivos del juego.
+> Si desinstalas la app se borra todo. Antes usa **OPCIONES → EXPORTAR DATOS** para guardar tu progreso, y después de reinstalar recupéralo con **IMPORTAR DATOS**. Los `.ypk` los tendrás que elegir otra vez.
 
-> Si desinstalas la app se borra todo. Antes usa **OPCIONES → EXPORTAR DATOS** para guardar una copia de tu progreso y luego recupérala con **IMPORTAR DATOS**.
+### Alternativa: archivos sueltos del PC
+
+En lugar de los `.ypk` también se pueden elegir los archivos originales, que están en la carpeta de instalación de cada juego en el PC:
+
+| Archivo | De qué juego | ¿Obligatorio? |
+|---|---|---|
+| `data.dat` | Yugi the Destiny | **Sí** |
+| `Voice.dat` | Yugi the Destiny | Recomendado (sonido) |
+| `yugi_pc.exe` | Yugi the Destiny | Recomendado (fusiones y lista de prohibidas) |
+| `joey.dat` | Joey the Passion: su `data.dat` **renombrado** | Opcional |
+| `kaiba.dat` | Kaiba the Revenge: su `data.dat` **renombrado** | Opcional |
+| `Voice.dat` | Joey the Passion o Kaiba the Revenge | Opcional: la app detecta de cuál de los dos juegos es |
 
 ---
 
@@ -68,9 +78,10 @@ Instala la APK nueva **encima** de la que tienes, sin desinstalar. Conservas tu 
 
 ## Problemas frecuentes
 
-- **No me deja elegir los archivos `.dat`:** usa el selector de archivos del sistema («Archivos») en lugar de la galería. Algunos selectores ocultan extensiones que no conocen.
-- **«falta data.dat»:** el único obligatorio es el `data.dat` de **Yugi the Destiny**. Comprueba que no lo renombraste.
-- **No salen Joey o Kaiba como rivales:** faltan `joey.dat` o `kaiba.dat`, o no se renombraron.
+- **No me deja elegir los `.ypk` o los `.dat`:** usa el selector **«Archivos»** del sistema en lugar de la galería. Algunos selectores ocultan extensiones que no conocen.
+- **«falta data.dat»:** no elegiste `yugi-todo.ypk`, o con archivos sueltos falta el `data.dat` de **Yugi the Destiny**.
+- **Joey o Kaiba juegan sin voz:** falta `joey-voces.ypk` o `kaiba-voces.ypk`, o se les cambió el nombre. Añádelos en **OPCIONES → AÑADIR ARCHIVOS**.
+- **No puedo descargar los archivos de GitHub:** el repositorio es privado, así que inicia sesión en GitHub en ese navegador.
 - **La música corta la de otra app:** en **OPCIONES → MÁS AJUSTES** elige «Música: La mía».
 
 ---
@@ -85,4 +96,4 @@ La app funciona **sin internet** y no recoge ningún dato. La red solo se usa en
 
 Proyecto de aficionados, **sin ánimo de lucro**, sin relación con Konami ni con sus licenciatarios y sin su respaldo. *Yu-Gi-Oh!* y *Power of Chaos* son marcas y obras de Konami y de Kazuki Takahashi.
 
-Este repositorio y la APK **no contienen** archivos, imágenes, sonidos ni textos del juego. Para usarla necesitas tu propia copia legítima. **No publiques ni pidas** los archivos del juego (`.dat`, `.exe` ni paquetes que los contengan) en este repositorio.
+La APK **no contiene** archivos, imágenes, sonidos ni textos del juego. Los `.ypk` del release «datos» son una **copia de seguridad personal** de un juego comprado, guardada en este repositorio privado: **no los compartas** y no hagas público el repositorio mientras exista ese release.
