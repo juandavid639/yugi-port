@@ -2,8 +2,6 @@
 
 Motor hecho desde cero para jugar **Yu-Gi-Oh! Power of Chaos** (Yugi the Destiny, con extras de Joey the Passion y Kaiba the Revenge) en teléfonos Android, en horizontal y con controles táctiles.
 
-> 🔒 **Repositorio privado, copia personal.** La app (APK) solo trae el motor. Las cartas, imágenes, música y voces salen de los archivos del juego, que están guardados aparte en el release **«datos»**. No compartas esos archivos.
-
 ---
 
 ## Instalación paso a paso
