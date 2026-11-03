@@ -1,4 +1,4 @@
-# Yugi Port
+# Yugi Port - Power of Chaos
 
 Motor hecho desde cero para jugar **Yu-Gi-Oh! Power of Chaos** (Yugi the Destiny, con extras de Joey the Passion y Kaiba the Revenge) en teléfonos Android, en horizontal y con controles táctiles.
 
