@@ -17,10 +17,6 @@ Motor hecho desde cero para jugar **Yu-Gi-Oh! Power of Chaos** (Yugi the Destiny
 
 Los archivos están al final de cada release, en la sección **Assets**. Para ver los releases desde la portada, entra en **Releases** en la columna derecha.
 
-> Como el repositorio es privado, para descargar tienes que **haber iniciado sesión en GitHub**. Puedes descargar en el navegador del teléfono con tu sesión iniciada, o descargar en el PC y pasar los archivos al teléfono por cable USB, por ejemplo a la carpeta `Descargas`.
->
-> **No cambies el nombre de los `.ypk`:** la app reconoce las voces de Joey y de Kaiba por la palabra `joey` o `kaiba` en el nombre del archivo.
-
 ### Orden de instalación
 
 1. **Descarga** los archivos de la tabla: la APK y, como mínimo, `yugi-todo.ypk`.
