@@ -2,6 +2,21 @@
 
 Motor hecho desde cero para jugar **Yu-Gi-Oh! Power of Chaos** (Yugi the Destiny, con extras de Joey the Passion y Kaiba the Revenge) en teléfonos Android, en horizontal y con controles táctiles.
 
+**Versión actual: [v1.10.13](../../releases/latest)**
+
+### Novedades recientes
+
+- **Ícono propio** de la app.
+- **Jugar desde la demostración:** toca la demo del título y elige «Jugar desde aquí» para seguir ese duelo con la baraja de abajo. También funciona desde una repetición. Es práctica: no da cartas ni cuenta en las estadísticas.
+- **IA más fina:** la CPU elige mejor sus objetivos (Snatch Steal), no desperdicia turnos con cartas sin efecto (Backup Soldier) y respeta los bloqueos de posición.
+- **Menos preguntas:** si entran varios monstruos a la vez (Scapegoat, Cyber Jar…), «¿Activar carta?» sale una sola vez. Si dijiste «sí» por error, toca fuera de la lista para cancelar.
+- **Reglas:** con las 5 zonas de Mágica/Trampa llenas ya no se puede activar una Mágica desde la mano (salvo las de Campo).
+- **Más claro en el duelo:** DNA Surgery muestra el icono del Tipo elegido, las cartas desterradas tienen una etiqueta «DESTERR.» junto al cementerio, y los monstruos con invocación especial explican su condición.
+- **Repeticiones contra Joey** que ahora se ven igual que el duelo real.
+- **Menos memoria** en los duelos: Android cierra menos la app en segundo plano.
+
+El detalle de cada versión está en su [release](../../releases) (archivo `LEEME`).
+
 ---
 
 ## Instalación paso a paso
@@ -10,7 +25,7 @@ Motor hecho desde cero para jugar **Yu-Gi-Oh! Power of Chaos** (Yugi the Destiny
 
 | Paso | Archivo | Dónde encontrarlo | ¿Obligatorio? | Qué es |
 |---|---|---|---|---|
-| 1 | `yugi-port-v1.10.7.apk` (4 MB) | Release [**v1.10.7**](../../releases/tag/v1.10.7) | **Sí** | La app |
+| 1 | `yugi-port-v1.10.13.apk` (4 MB) | Release más reciente: [**Latest**](../../releases/latest) | **Sí** | La app |
 | 2 | `yugi-todo.ypk` (632 MB) | Release [**datos**](../../releases/tag/datos) | **Sí** | Todo el juego: cartas, imágenes, menús, música, efectos, voces de Yugi, fusiones, y los rivales Joey y Kaiba |
 | 3 | `joey-voces.ypk` (89 MB) | Release [**datos**](../../releases/tag/datos) | Opcional | Voces y música de Joey |
 | 4 | `kaiba-voces.ypk` (115 MB) | Release [**datos**](../../releases/tag/datos) | Opcional | Voces y música de Kaiba |
@@ -58,14 +73,14 @@ En lugar de los `.ypk` también se pueden elegir los archivos originales, que es
 - **Modos:**
   - Duelo individual y Torneo (al mejor de 3, con intercambio de side deck y la opción de cambiar de baraja entre duelos).
   - «Los 3» (Yugi → Joey → Kaiba).
-  - 2 jugadores en el mismo móvil.
   - **Duelo en red** entre dos teléfonos en la misma red Wi-Fi.
 - **Colección y mazos:**
   - Cartas de premio al ganar.
   - Álbum con el progreso de cada edición.
   - Editor de mazos con 5 barajas guardadas, autocompletar y estado de tus fusiones.
   - Claves de cartas.
-- **Repeticiones:** se guardan y se pueden exportar e importar.
+- **Repeticiones:** se guardan, se pueden exportar e importar, y desde cualquier momento puedes tomar el control y seguir jugando (práctica).
+- **Demostración:** si dejas el título quieto, la CPU juega sola; tócala para seguir ese duelo tú.
 - **Adaptado al móvil:** textos de las cartas en español, paneles laterales en pantallas anchas, velocidad del duelo ajustable, vibración, y una opción para escuchar tu propia música mientras juegas.
 
 ---
@@ -75,7 +90,7 @@ En lugar de los `.ypk` también se pueden elegir los archivos originales, que es
 - **No me deja elegir los `.ypk` o los `.dat`:** usa el selector **«Archivos»** del sistema en lugar de la galería. Algunos selectores ocultan extensiones que no conocen.
 - **«falta data.dat»:** no elegiste `yugi-todo.ypk`, o con archivos sueltos falta el `data.dat` de **Yugi the Destiny**.
 - **Joey o Kaiba juegan sin voz:** falta `joey-voces.ypk` o `kaiba-voces.ypk`, o se les cambió el nombre. Añádelos en **OPCIONES → AÑADIR ARCHIVOS**.
-- **No puedo descargar los archivos de GitHub:** el repositorio es privado, así que inicia sesión en GitHub en ese navegador.
+- **No puedo descargar los archivos de GitHub en el teléfono:** descárgalos en el PC y pásalos al teléfono por cable USB, por ejemplo a la carpeta `Descargas`.
 - **La música corta la de otra app:** en **OPCIONES → MÁS AJUSTES** elige «Música: La mía».
 
 ---
